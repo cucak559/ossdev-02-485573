@@ -1,8 +1,7 @@
 import unittest
 import sys
 
-sys.path.insert(0, '../')
-from sieve import sieve_in_interval, calculate_primes_in_interval
+from sieve.sieve import sieve_in_interval, calculate_primes_in_interval
 
 
 class SieveTest(unittest.TestCase):
