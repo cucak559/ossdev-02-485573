@@ -17,7 +17,8 @@ def sieve_in_interval(lower_bound: int, upper_bound: int) -> List[int]:
         current += 1
 
     # All non zero numbers are primes
-    return list(filter(lambda number: number != 0 and number >= lower_bound, primes))
+    return list(filter(lambda number:
+                       number != 0 and number >= lower_bound, primes))
 
 
 def calculate_primes_in_interval() -> None:

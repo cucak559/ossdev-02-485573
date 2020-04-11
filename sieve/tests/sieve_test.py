@@ -13,7 +13,8 @@ class SieveTest(unittest.TestCase):
         self.assertEqual(res, [2, 3, 5, 7, 11, 13, 17, 19, 23, 29])
 
         res = sieve_in_interval(58, 114)
-        self.assertEqual(res, ([59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113]))
+        self.assertEqual(res, ([59, 61, 67, 71, 73, 79, 83,
+                                89, 97, 101, 103, 107, 109, 113]))
 
     def test_invalid_values(self):
         with self.assertRaises(ValueError):
