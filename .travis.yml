@@ -9,6 +9,8 @@ python:
 
 install:
   - pip install -U pytest
+  - pip install pycodestyle
 
 script:
   - pytest
+  - pycodestyle sieve
